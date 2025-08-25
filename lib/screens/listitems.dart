@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class Listitems extends StatelessWidget {
   const Listitems({super.key});
 
+  void _floatingAction() {}
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -129,6 +131,18 @@ class Listitems extends StatelessWidget {
                   ],
                 ),
               ],
+            ),
+          ),
+
+          Container(
+            padding: EdgeInsets.fromLTRB(0, 0, 10, 10),
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: FloatingActionButton(
+                onPressed: _floatingAction,
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
+              ),
             ),
           ),
         ],
