@@ -31,6 +31,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int currIndex = 0;
+
+  List<Widget> body = const [Listitems(), Profile(), Listitems(), Profile()];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,25 +43,15 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
         title: Text("Hello World"),
       ),
-      body: Listitems(),
-      // Center(
-      //   child: Column(
-      //     mainAxisAlignment: MainAxisAlignment.center,
-      //     children: <Widget>[
-      //       const Text('You have pushed the button this many times:'),
-      //       Text(
-      //         '$_counter',
-      //         style: Theme.of(context).textTheme.headlineMedium,
-      //       ),
-      //     ],
-      //   ),
-      // ),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: _incrementCounter,
-      //   tooltip: 'Increment',
-      //   child: const Icon(Icons.add),
-      // ),
+      body: Center(child: body[currIndex]),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (index) {
+          setState(() {
+            currIndex = index;
+          });
+        },
+        currentIndex: currIndex,
+        showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "home"),
