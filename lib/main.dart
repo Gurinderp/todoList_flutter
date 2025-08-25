@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolist_app/screens/calenderview.dart';
 import 'package:todolist_app/screens/homeitems.dart';
 import 'package:todolist_app/screens/listitems.dart';
 import 'package:todolist_app/screens/profile.dart';
@@ -34,7 +35,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int currIndex = 0;
 
-  List<Widget> body = const [Homeitems(), Listitems(), Profile(), Profile()];
+  List<Widget> body = const [
+    Homeitems(),
+    Listitems(),
+    CalenderView(),
+    Profile(),
+  ];
 
   @override
   Widget build(BuildContext context) {
