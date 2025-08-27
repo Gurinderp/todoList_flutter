@@ -46,10 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     void _floatingAction() {}
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 143, 144, 223),
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         centerTitle: true,
-        title: Text("Hello World"),
+        title: Text("DewDates"),
       ),
       body: Center(child: body[currIndex]),
       // floatingActionButton: Container(
@@ -64,6 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //   ),
       // ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         onTap: (index) {
           setState(() {
             currIndex = index;

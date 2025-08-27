@@ -19,19 +19,27 @@ class Listitems extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(20),
             child: Column(
+              spacing: 5,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 ExpansionTile(
+                  collapsedBackgroundColor: Theme.of(
+                    context,
+                  ).colorScheme.inversePrimary,
+                  backgroundColor: Theme.of(context).colorScheme.primary,
                   expandedAlignment: Alignment.topLeft,
                   title: Text("Past Due"),
                   children: [
                     Container(
+                      color: Theme.of(context).colorScheme.inversePrimary,
                       child: ListTile(
                         title: Text("Hello World"),
                         leading: Icon(Icons.check),
                       ),
                     ),
                     Container(
+                      color: Theme.of(context).colorScheme.inversePrimary,
                       child: ListTile(
                         title: Text("Hello World"),
                         leading: Icon(Icons.error),
@@ -40,16 +48,22 @@ class Listitems extends StatelessWidget {
                   ],
                 ),
                 ExpansionTile(
+                  collapsedBackgroundColor: Theme.of(
+                    context,
+                  ).colorScheme.inversePrimary,
+                  backgroundColor: Theme.of(context).colorScheme.primary,
                   expandedAlignment: Alignment.topLeft,
                   title: Text("Today"),
                   children: [
                     Container(
+                      color: Theme.of(context).colorScheme.inversePrimary,
                       child: ListTile(
                         title: Text("Hello World"),
                         leading: Icon(Icons.check),
                       ),
                     ),
                     Container(
+                      color: Theme.of(context).colorScheme.inversePrimary,
                       child: ListTile(
                         title: Text("Hello World"),
                         leading: Icon(Icons.error),
@@ -58,16 +72,22 @@ class Listitems extends StatelessWidget {
                   ],
                 ),
                 ExpansionTile(
+                  collapsedBackgroundColor: Theme.of(
+                    context,
+                  ).colorScheme.inversePrimary,
+                  backgroundColor: Theme.of(context).colorScheme.primary,
                   expandedAlignment: Alignment.topLeft,
                   title: Text("Future"),
                   children: [
                     Container(
+                      color: Theme.of(context).colorScheme.inversePrimary,
                       child: ListTile(
                         title: Text("Hello World"),
                         leading: Icon(Icons.check),
                       ),
                     ),
                     Container(
+                      color: Theme.of(context).colorScheme.inversePrimary,
                       child: ListTile(
                         title: Text("Hello World"),
                         leading: Icon(Icons.error),

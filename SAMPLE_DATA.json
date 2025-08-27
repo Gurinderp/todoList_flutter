@@ -1,0 +1,56 @@
+[
+    {
+        "createdDate": "2025-08-26",
+        "dueDate": "2025-09-26",
+        "title": "Finish todo list app",
+        "description": "Finish the flutter practice todo list application",
+        "status": "in progress",
+        "recurrence": "none",
+        "priority": "high"
+    },
+    {
+        "createdDate": "2025-06-26",
+        "dueDate": "2025-07-26",
+        "title": "CSC 154",
+        "description": "Complete and pass CSC 154",
+        "status": "past due",
+        "recurrence": "none",
+        "priority": "medium"
+    },
+    {
+        "createdDate": "2024-08-26",
+        "dueDate": "2040-09-26",
+        "title": "Feed Marvin",
+        "description": "Scoop the food, place food in bowl",
+        "status": "in progress",
+        "recurrence": "daily",
+        "priority": "high"
+    },
+    {
+        "createdDate": "2025-09-26",
+        "dueDate": "2025-09-26",
+        "title": "clean out trash",
+        "description": "empty the trash bin and clean it",
+        "status": "in progress",
+        "recurrence": "none",
+        "priority": "low"
+    },
+    {
+        "createdDate": "2025-08-30",
+        "dueDate": "2025-08-30",
+        "title": "Eat Pho",
+        "description": "Get some pho from pho le and eat it",
+        "status": "in progress",
+        "recurrence": "none",
+        "priority": "medium"
+    },
+    {
+        "createdDate": "2025-09-27",
+        "dueDate": "2025-09-27",
+        "title": "Work on official app",
+        "description": "Start on the official todo list app",
+        "status": "in progress",
+        "recurrence": "none",
+        "priority": "high"
+    }
+]
